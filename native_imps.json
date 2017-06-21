@@ -1,0 +1,341 @@
+[
+  {
+    "description": "Matching: Required Image",
+    "native": {
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "img": {
+            "w": 300,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Matching: Required Image & Matching Required Type 10 Data & Not Matching Optional Type 11 Data",
+    "native": {
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "img": {
+            "w": 300,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "required": 1,
+          "data": {
+            "type": 10,
+            "len": 30
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "data": {
+            "type": 11,
+            "len": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Not Matching: Required Image & Matching Required Type 10 Data & Not Matching Optional Type 11 Data",
+    "native": {
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "img": {
+            "w": 700,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "required": 1,
+          "data": {
+            "type": 10,
+            "len": 30
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "data": {
+            "type": 11,
+            "len": 5
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Matching: Required Type 10 Data & Layout 4",
+    "native": {
+      "layout": 4,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "data": {
+            "type": 10,
+            "len": 30
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Matching: Required Type 10 Data & Layout 4 & Matching Optional Data Type 11 & Not Matching Optional Image",
+    "native": {
+      "layout": 4,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "data": {
+            "type": 10,
+            "len": 30
+          }
+        },
+        {
+          "id": 3,
+          "required": 0,
+          "data": {
+            "type": 11,
+            "len": 30
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "img": {
+            "w": 700,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Not Matching: Required Type 10 Data & Matching Required Data Type 11 & Not Matching Optional Image",
+    "native": {
+      "layout": 4,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "data": {
+            "type": 10,
+            "len": 2
+          }
+        },
+        {
+          "id": 3,
+          "required": 1,
+          "data": {
+            "type": 11,
+            "len": 30
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "img": {
+            "w": 700,
+            "h": 200,
+            "mimes": [
+              "image/mp3"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Matching: Required Video & Layout 6",
+    "native": {
+      "layout": 6,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "video": {
+            "minduration": 15,
+            "maxduration": 40,
+            "protocols": [
+              1,2,3,4,5,6
+            ],
+            "mimes": [
+              "video/mp4", "video/ogg", "video/webm"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Matching: Required Video & Layout 6 & Matching Optional Image & Not Matching Optional Data",
+    "native": {
+      "layout": 6,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "video": {
+            "minduration": 15,
+            "maxduration": 40,
+            "protocols": [
+              1,2,3,4,5,6
+            ],
+            "mimes": [
+              "video/mp4", "video/ogg", "video/webm"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "required": 0,
+          "img": {
+            "w": 300,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "data": {
+            "type": 11,
+            "len": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "description": "Not Matching: Required Video & Layout 6 & Matching Optional Image & Not Matching Optional Data",
+    "native": {
+      "layout": 6,
+      "assets": [
+        {
+          "id": 1,
+          "required": 1,
+          "title": {
+            "len": 30
+          }
+        },
+        {
+          "id": 2,
+          "required": 1,
+          "video": {
+            "minduration": 15,
+            "maxduration": 40,
+            "protocols": [
+              1
+            ],
+            "mimes": [
+              "video/mp5"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "required": 0,
+          "img": {
+            "w": 300,
+            "h": 200,
+            "mimes": [
+              "image/png"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "required": 0,
+          "data": {
+            "type": 11,
+            "len": 1
+          }
+        }
+      ]
+    }
+  }
+]
